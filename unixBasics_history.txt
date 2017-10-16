@@ -156,3 +156,8 @@
 
   258  mv Unix_probset2/unixBasics_history.txt .
   262  emacs unixBasics_history.txt 
+
+  277  git add -A
+  278  git status
+  279  git commit -m "edited and saved unixBasics_history.txt"
+  280  git push origin master
