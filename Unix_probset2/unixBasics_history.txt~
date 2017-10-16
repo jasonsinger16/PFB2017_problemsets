@@ -1,0 +1,192 @@
+   28  date ; sleep 2 ; date
+   29  date
+   32  date ; sleep 5 ; date
+   33  man sleep
+   34  date ; sleep ; date
+   35  ls
+   36  ls /Users/admin/Desktop/files/
+   37  cd /Users/admin/Desktop/files/
+   38  ls
+   39  grep Chr7 cuffdiff.txt | less
+   40  grep Chr7 cuffdiff.txt | wc -l
+   41  grep Chr7 cuffdiff.txt | less -S
+   42  wc -l fav_chr_cuffdiff.txt 
+   43  grep Chr7 cuffdiff.txt > fav_chr_cuffdiff.txt 
+   44  grep Chr9 cuffdiff.txt >> fav_chr_cuffdiff.txt 
+   45  wc -l fav_chr_cuffdiff.txt 
+   46  cat blablabla.txt
+   47  cat blablabla.txt 2> errors.txt
+   48  less errors.txt 
+   49  cat blablabla.txt > errors.txt
+   50  cat fav_chr_cuffdiff.txt blablabla.file > all_out_err.txt 2>&1
+   51  less all_out_err.txt 
+   52  pwd
+   53  cd
+   54  ls
+   55  pwd
+   56  mkdir problemsets
+   57  cd problemsets/
+   58  pwd
+   59  cat - > sequences.nt.fa
+   60  ls
+   61  less sequences.nt.fa 
+   62  cat - > sequences.nt.fa
+   63  ls
+   64  less sequences.nt.fa 
+   65  wc sequences.nt.fa 
+   66  head -1 sequences.nt.fa 
+   67  tail -3 sequences.nt.fa 
+   68  grep '>' sequences.nt.fa 
+   69  grep '>' sequences.nt.fa | wc -l
+   70  mv sequences.nt.fa cancer_genes.fasta
+   71  ln -s ~/Desktop/files/cuffdiff.txt .
+   72  ls
+   73  less -S cuffdiff.txt 
+   74  column -t cuffdiff.txt | less
+   75  column -t cuffdiff.txt | less -S
+   76  sort -k10 -nr cuffdiff.txt | column -t | less -S
+   77  column -t cuffdiff.txt | less -S
+   78  sort -k10 -nr cuffdiff.txt | column -t | less -S
+   79  column -t cuffdiff.txt | less -S
+   80  sort -k10 -nr cuffdiff.txt | column -t | less -S
+   81  sort -k10 -nr cuffdiff.txt > sorted.cuffdiff.out
+   82  less sorted.cuffdiff.out 
+   83  column -t sorted.cuffdiff.out | less -S
+   84  head -100 sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+   85  less top100.sorted.cuffdiff.out 
+   86  sort -k10 -nr cuffdiff.txt | head -100
+   87  column -t cuffdiff.txt | less -
+   88  column -t cuffdiff.txt | less -S
+   89  cut -f1 cuffdiff.txt > col1.txt
+   90  cut -f3 cuffdiff.txt > col2.txt
+   91  diff col1.txt col2.txt 
+   92  comm -12 col1.txt col2.txt | wc -l
+   93  comm -23 col1.txt col2.txt | wc -l
+   94  comm -13 col1.txt col2.txt | wc -l
+   95  wc -l cuffdiff.txt 
+   96  cut -f3 cuffdiff.txt | less
+   97  cut -f3 cuffdiff.txt | uniq | wc -l
+   98  cut -f3 cuffdiff.txt | sort | uniq | wc -l
+   99  cut -f3 cuffdiff.txt | sort | uniq | head -100 > differentially_expressed_genes.txt
+  100  ls
+  101  rm col?.txt
+  102  ls
+  103  ls -a
+  104  cd ..
+  105  ls -a
+  106  emacs .bash_profile 
+  107  ls
+  108  ls -lh
+  109  ls -lfh
+  110  vi .bashrc
+  111  alias rm='rm -i'
+  112  touch test.txt
+  113  rm test.txt 
+  114  clear
+  115  ls
+  116  cd
+  117  ls
+  118  cd problemsets/
+  119  ls
+  120  echo "# PFB2017_problemsets" >> README.md
+  121  ls
+  122  ls -a
+  123  git init
+  124  ls -a
+  125  git add README.md 
+  126  git commit -m "first commit"
+  127  git config --global --edit
+  128  git config --global --edit
+  129  git commit --amend --reset-author
+  130  history | tail
+  131  git remote add origin git@github.com:jasonsinger16/PFB2017_problemsets.git
+  132  git push -u origin master
+  133* git remote add origin1 https://github.com/jasonsinger16/PFB2017_problemsets.git
+  134  git push -u origin master
+  135  ls
+  136  rm .git
+  137  rmdir .git
+  138  cd .git
+  139  ls
+  140  rm *
+  141  ls
+  142  cd ..
+  143  ls -a
+  144  rm -f .git
+  145* rmdir -p .git
+  146  man rm
+  147  man rm
+  148  man rmdir
+  149  man rm
+  150  rm -R .git
+  151  ls -a
+  152  rm -R .git
+  153* 
+  154  ls -a
+  155  git init
+  156  ls -a
+  157  git remote add origin https://github.com/jasonsinger16/PFB2017_problemsets.git
+  158  git push -u origin master
+  159  git add README.md 
+  160  git commit -m "first commit"
+  161  git push -u origin master
+  162  less README.md 
+  163  emacs git_exercises.txt
+  164  git add git_exercises.txt 
+  165  git commit -m 'added a test file'
+  166  git push origin master
+  167  git clone https://github.com/srobb1/pfb2017.git
+  168  ls
+  169  ll
+  170  ls -l
+  171  mkdir Unix_probset1
+  172  mv sorted.cuffdiff.out Unix_probset1/
+  173  mv top100.sorted.cuffdiff.out Unix_probset1/
+  174  ls
+  175  mf cancer_genes.fasta Unix_probset1/
+  176  mv cancer_genes.fasta Unix_probset1/
+  177  mv differentially_expressed_genes.txt Unix_probset1/
+  178  ls
+  179  cp /Users/admin/Desktop/files/cuffdiff.txt .
+  180  cp /Users/admin/Desktop/files/cuffdiff.txt Unix_probset1/cuffdiff.txt
+  181  git add Unix_probset1/
+  182  git commit -m "adding Unix probset1"
+  183  git push origin master
+  184  ls
+  185  mkdir Unix_probset2
+  186  mv git_exercises.txt Unix_probset2
+  187  ls
+  188  ls Unix_probset2
+  189  git add Unix_probset2
+  190  git commit -m "adding Unix_probset2"
+  191  git push origin master
+  192  git rm git_exercises.txt
+  193  git commit -m "removing exercise"
+  194  git push origin master
+  195  emacs mysequences.txt
+  196  ls
+  197  mv mysequences.txt Unix_probset2
+  198  ls
+  199  ls Unix_probset2
+  200  git add Unix_probset2/mysequences.txt 
+  201  git commit -m 'adding mysequences.txt'
+  202  git push
+  203  mkdir fastas
+  204  ls
+  205  rmdir fastas/
+  206  ls
+  207  mkdir Unix_probset2/fastas
+  208  ls Unix_probset2
+  209  mv Unix_probset1/cancer_genes.fasta Unix_probset2/fastas/
+  210  ls Unix_probset2/fastas/
+  211  man git
+  212  man git add
+  213  git add -h
+  214  ls
+  215  git add all *
+  216  git add --all *
+  217  git status
+  218  git commit - m "moved cancer_genes from PS1 to PS2"
+  219  git commit -m "moved cancer_genes from PS1 to PS2"
+  220  git push origin master
+  221  history > Unix_probset2/unixBasics_history.txt
