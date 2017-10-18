@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+# Tests a value given on the command line.
+# Evaluates that value against a logical expression and reports whether the result of the logical test is True or False.
+
+import sys
+print('')
+print('')
+print("Testing if the value entered, " + sys.argv[1] + ", is True or Not True...")
+print('')
+if sys.argv[2] == "number":
+    if float(sys.argv[1]):
+        print("Value is considered True by Python3")
+#    elif float(sys.argv[1]):
+#        print("Value is considered True by Python3")
+    else:
+        print("Value is considered Not True (normally known as False) by Python3")
+    print('')
+    print('')
+    print('')
+else:
+    if sys.argv[1]:
+        print("Value is considered True by Python3")
+    else:
+        print("Value is considered Not True (normally known as False) by Python3")
+    print('')
+    print('')
+    print('')
