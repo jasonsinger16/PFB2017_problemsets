@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+#calculate the AT content of a DNA string
+
+seq = "AATTGGCCA"
+numA = seq.count('A')
+print(numA)
