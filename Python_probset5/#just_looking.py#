@@ -1,0 +1,7 @@
+for k2hdr in concat_seqs:
+    print(k2hdr + ", reverse-complement")
+    long_seq = concat_seqs[k2hdr]
+    linelength = 96
+    linelist = [long_seq[pos:pos+linelength] for pos in range(0, len(long_seq), linelength)]
+    for newline in linelist:
+        print(newline)
