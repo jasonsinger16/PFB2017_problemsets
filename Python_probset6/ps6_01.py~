@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+# Find every occurrence of "Nobody" in the file 'Python_06_nobody.txt'
+# Print out the corresponding positions
+
+import re
+
+poem_file = open('Python_06_nobody.txt', 'r')
+
+# poem_text = poem_file.read()                            #aborted strategy
+# for occurence in re.finditer("Nobody", poem_text):      #aborted strategy
+#     print(m.start())                                    #aborted strategy
+
+
+line_counter = 0
+hit_counter = 0
+print("\nPositions of 'Nobody' in this poem")
+for line in poem_file:
+    line_counter += 1
+    line = line.rstrip()
+    if line.find("Nobody") >= 0:
+        print("line number:", line_counter, "     char position:", line.find("Nobody")+1)
+        hit_counter += 1
+print(hit_counter, "total occurences\n")
