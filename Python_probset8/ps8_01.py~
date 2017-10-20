@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+# Take a mulit-FASTA file from user input and calculate the nucleotide composition for each sequence. 
+# Use a datastructure to keep count. Print out each sequence name and its compostion in this format:
+# seqName\tA_count\tT_count\tG_count\C_count
+
+input_fasta = input("Enter name of fasta-formatted file:")
+
+toplvldict = {}
+
+for line in input_fasta:
+    line = line.rstrip(line)
+    if ">" in line:
+        seqname = line
+        toplvldict[seqname] = ''
+    else:
+        acgt = line
+        toplvldict[seqname] = toplvldict[seqname] + acgt
