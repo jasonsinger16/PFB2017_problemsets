@@ -1,0 +1,6 @@
+http://fasta.bioch.virginia.edu/mol_evol/data/ss_rand5-200_v_qfo_BP62.txt
+http://fasta.bioch.virginia.edu/mol_evol/data/ss_rand5-200_v_qfo_VT10.txt
+http://fasta.bioch.virginia.edu/mol_evol/data/ss_rand5-200_v_qfo_VT160.txt
+http://fasta.bioch.virginia.edu/mol_evol/data/ss_rand5-200_v_qfo_VT20.txt
+http://fasta.bioch.virginia.edu/mol_evol/data/ss_rand5-200_v_qfo_VT40.txt
+http://fasta.bioch.virginia.edu/mol_evol/data/ss_rand5-200_v_qfo_VT80.txt
