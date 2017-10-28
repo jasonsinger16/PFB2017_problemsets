@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+# Write a python program that reads in the 'bowtie2.sam' file and generates a table containing the number of reads mapped to each gene
+
+import sys
+
+input_filename = sys.argv[1]
+fh = open(input_filename, "r")
+
+gene_reads = {}
+for line in fh:
+    line = line.rstrip()
+    exploded_line = line.split("\t")
+    gene = (exploded_line[2].split("^"))[0]
+    read = exploded_line[0]
+    gene_reads[gene]=read
+
+gene_counter = {}
+for alignment in column3:
+    gene = transcript.split("^")[0]
+    gene_counter.add(gene)

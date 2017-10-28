@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+# Write a python program 'kmer_counter.py' that takes command-line parameters:
+#   kmer_length
+#   filename.fastq
+#   num_top_kmers
+
+# The program should do the following:
+#   read in the fastq file 'filename.fastq'
+#   count kmers of size 'kmer_length'
+#   output a table of the 'num_top_kmers' kmers sorted by abundance, descendingly.
+
+
+import sys
+
+input_filename = sys.argv[1]
+kmer_length = sys.argv[2]
+top_kmers = sys.argv[3]
+
+fastq_obj = open(input_filename, 'r')
+
+counter = 0
+reads = []
+for line in fastq_obj:
+    seq_line = counter%4
+    if seq_line == 1:
+         reads.append(line)
+     counter +=1
+
+print(reads)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fastq_obj.close()
+
